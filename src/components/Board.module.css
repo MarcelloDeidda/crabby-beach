@@ -1,0 +1,18 @@
+.board {
+    display: flex;
+    flex-direction: column;
+    justify-content: stretch;
+    width: 100%;
+    height: 32rem;
+    background-color: #DAD1DA80;
+}
+
+.board-gameover {
+    background-color: #AA46618E;
+}
+
+.row {
+    display: flex;
+    justify-content: stretch;
+    flex: 1;
+}

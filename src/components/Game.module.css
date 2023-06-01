@@ -1,0 +1,19 @@
+.game {
+    display: flex;
+    flex-direction: column;
+    max-width: 34rem;
+    width: 100%;
+    margin: 1rem;
+    border-radius: 25px;
+    border: 1px solid black;
+    box-shadow: 5px 5px 10px black;
+    overflow: hidden;
+}
+
+.game-win {
+    box-shadow: 10px 10px 10px #187960;
+}
+
+.game-over {
+    box-shadow: 10px 10px 10px #785350;
+}

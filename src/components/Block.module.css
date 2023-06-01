@@ -1,0 +1,61 @@
+.block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    text-align: center;
+    transition: 100ms;
+}
+
+.block-0 {
+    background-color: #cfcf9f;
+}
+
+.block-1 {
+    background-color: #bfbf8f;
+}
+
+.block-2 {
+    background-color: #afaf7f;
+}
+
+.block-3 {
+    background-color: #9f9f6f;
+}
+
+.block-4 {
+    background-color: #8f8f5f;
+}
+
+.block-5 {
+    background-color: #7f7f4f;
+}
+
+.block-6 {
+    background-color: #6f6f3f;
+}
+
+.block-7 {
+    background-color: #5f5f2f;
+}
+
+.block-8 {
+    background-color: #5f5f2f;
+}
+
+.block-crab {
+    background-color: #4f4f1f;
+}
+
+.block-marked {
+    background-color: #ff5454;
+    color: #fff;
+}
+
+.block-active-explore:hover {
+    background-color: #999;
+}
+
+.block-active-mark:hover {
+    background-color: #F99;
+}
