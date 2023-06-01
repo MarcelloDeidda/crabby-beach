@@ -16,7 +16,7 @@ const App = () => {
   }
 
   return <>
-    <button onClick={handleOpenModal} className={classes["modal-button"]}>&#128712;</button>
+    <button onClick={handleOpenModal} className={classes["modal-button"]}>&#9432;</button>
     <Game />
     {showModal && <Modal onClose={handleCloseModal} />}
   </>
