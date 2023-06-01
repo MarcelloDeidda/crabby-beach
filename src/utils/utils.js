@@ -7,7 +7,7 @@ export const populateBoard = () => {
         do {
             combination = [Math.floor(Math.random() * 20), Math.floor(Math.random() * 20)];
         } while (newBoard[combination[0]][combination[1]] && newBoard[combination[0]][combination[1]].value === "crab")
-        newBoard[combination[0]][combination[1]] = { value: "crab", show: false, marked: false, coordinates: [combination[0], combination[1]] };
+        newBoard[combination[0]][combination[1]] = { value: "crab", show: false, marked: false, coordinates: [combination[0], combination[1]], id: combination[0] * 100 + [combination[1]] };
     }
 
     // For each empty cell, calculate the number of crabs around
@@ -26,7 +26,7 @@ export const populateBoard = () => {
                         }
                     }
                 }
-                newBoard[row][cell] = { value: crabSum, show: false, marked: false, coordinates: [row, cell] }
+                newBoard[row][cell] = { value: crabSum, show: false, marked: false, coordinates: [row, cell], id: row * 100 + cell }
             }
         }
     }

@@ -33,6 +33,6 @@ body {
 
 @media (max-height: 600px) {
     html {
-        font-size: 11px;
+        font-size: 9px;
     }
 }

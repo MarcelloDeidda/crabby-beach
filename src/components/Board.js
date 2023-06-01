@@ -3,8 +3,9 @@ import classes from "./Board.module.css";
 
 const Board = props => {
     const boardContent = props.board.map(row => {
-        return <div className={classes.row}>{row.map(block => {
+        return <div key={props.board.indexOf(row)} className={classes.row}>{row.map(block => {
             return <Block
+                key={block.id}
                 onBlockStatusChange={props.onBlockStatusChange}
                 value={block.value}
                 show={block.show}
