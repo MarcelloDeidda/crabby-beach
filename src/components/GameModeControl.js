@@ -9,8 +9,8 @@ const GameModeControl = props => {
             {gameover ? <p>GAMEOVER</p> : win ? <p>WIN</p> : <p>{markCount}/65 CRABS</p>}
         </div>
         <div className={classes.action}>
-            <button disabled={gameover || win || mode === "explore"} onClick={() => onModeToggle("explore")}>Explore</button>
-            <button disabled={gameover || win || mode === "mark"} onClick={() => onModeToggle("mark")}>Mark</button>
+            <button disabled={gameover || win || mode === "explore"} onClick={() => onModeToggle("explore")}>Uncover</button>
+            <button disabled={gameover || win || mode === "mark"} onClick={() => onModeToggle("mark")}>Flag</button>
         </div>
         <button onClick={onReset}>Reset</button>
     </div>

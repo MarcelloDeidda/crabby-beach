@@ -16,6 +16,10 @@
     background-color: #C8A3A0;
 }
 
+.info {
+    width: 9rem;
+}
+
 .mode button {
     width: 6rem;
     padding: 0.5rem 1rem;
@@ -25,15 +29,11 @@
     cursor: pointer;
 }
 
-.info {
-    width: 9rem;
-}
-
-.action button:hover {
+.mode button:hover {
     opacity: 0.5;
 }
 
-.action button:disabled {
+button:disabled {
     opacity: 1;
     cursor: default;
 }

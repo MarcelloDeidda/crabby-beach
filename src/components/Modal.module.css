@@ -1,0 +1,70 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 20;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+.modal {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 5vh;
+    left: 5%;
+    width: 90%;
+    background-color: #DAD1DA;
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 5px 5px 10px #ccc;
+    z-index: 30;
+    animation: slide-down 300ms ease-out forwards;
+}
+
+.content h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.content p {
+    margin: 1rem 0;
+    text-align: justify;
+    font-size: 1.1rem;
+    line-height: 1.6rem;
+}
+
+.content p a {
+    color: inherit
+}
+
+.modal button {
+    align-self: flex-end;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+
+.modal button:hover {
+    opacity: 0.5;
+}
+
+@media (min-width: 768px) {
+    .modal {
+        width: 40rem;
+        left: calc(50% - 20rem);
+    }
+}
+
+@keyframes slide-down {
+    from {
+        opacity: 0;
+        transform: translateY(-3rem);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

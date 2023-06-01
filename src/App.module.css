@@ -1,0 +1,34 @@
+.modal-button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 10px;
+    font-size: 1.5rem;
+    padding: 0.5rem 0.8rem;
+    border-radius: 15px;
+    border: 1px solid #DAD1DA;
+    background-color: transparent;
+    color: #DAD1DA;
+    cursor: pointer;
+    transition: 200ms;
+    animation: slide-up 1000ms ease-in-out;
+}
+
+@keyframes slide-up {
+    from {
+        background-color: #DAD1DA;
+        color: black;
+        transform: translateY(3rem);
+    }
+
+    to {
+        background-color: transparent;
+        color: #DAD1DA;
+        transform: translateY(0);
+    }
+}   
+
+.modal-button:hover {
+    background-color: #DAD1DA;
+    color: black;
+}
